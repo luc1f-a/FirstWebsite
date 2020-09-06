@@ -1,48 +1,115 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="css/main.css" rel="stylesheet">
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/31e03963e8.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <div class="flex header-top">
-        <ul class="flex header-nav-menu">
-            <li><a class="header-nav-menu_link header-nav-menu_item-active"
+    <div class="header-top">
+        <ul class="flex nav-menu">
+            <li><a class="nav-menu__link nav-menu__item-active"
                    href="#">Home</a></li>
-            <li><a class="header-nav-menu_link" href="#">About me</a></li>
-            <li><a class="header-nav-menu_link" href="#">Skills</a></li>
-            <li><a class="header-nav-menu_link" href="#">Portfolio</a></li>
-            <li><a class="header-nav-menu_link" href="#">Contacts</a></li>
+            <li><a class="nav-menu__link" href="#about-me">About me</a></li>
+            <li><a class="nav-menu__link" href="#skills">Skills</a></li>
+            <li><a class="nav-menu__link" href="#contacts">Contacts</a></li>
         </ul>
     </div>
-    <hr class="separator">
+    <hr class="divider">
     <div class="flex header-content">
-        <div class="flex header-content-left">Daniil<br>Antonov</div>
-        <div class="flex header-content-center">Web programmer<br> 20 years old, Volgograd</div>
-        <div class="flex header-content-right">
-            <ul class="flex header-content-right-language">
-                <li><a class="header-content-right-language-item-link" href="#">RU</a></li>
+        <h2 class="content__name">Daniil<br>Antonov</h2>
+        <div class="content__description">Web programmer<br> 18 years old, Volgograd</div>
+        <div class="flex content__language">
+            <ul class="flex content__language-items">
+                <li><a class="language-item" href="#">RU</a></li>
                 <p>|</p>
-                <li><a class="header-content-right-language-item-active-link" href="#">ENG</a></li>
+                <li><a class="language-item-active" href="#">ENG</a></li>
             </ul>
         </div>
     </div>
-    <img class="flex header-content-image" src="img/header.png">
+    <img class="flex header__content-image" src="img/header.png" alt="img">
 </div>
-<div class="flex content">
-    <div class="flex content-about_me-background">
-        <div class="flex content-about_me">
+<div class="content">
+    <div class="flex about-me" id="about-me">
+        <div class="about-me__block">
             <h2>About me</h2>
-            <div class="flex content-about_me-description">
-                <p>Hi, I`m Danil - Junior FullStack Web Developer from Volgograd. I`m interested in programming and
+            <div class="about-me__description">
+                <p class="about-me__description-text">Hi, I`m Danil - Junior FullStack Web Developer from Volgograd. I`m
+                    interested in programming and
                     everything
                     connected with it</p>
-                <p id="content-about_me-description2">I`m studying at courses "Web and mobile development" in
+                <p class="about-me__description-text">I`m studying at courses "Web and mobile development" in
                     IT-Academy</p>
-                <p id="content-about_me-description3">Ready to implement excellent projects with wonderful people</p>
+                <p class="about-me__description-text">Ready to implement excellent projects with wonderful people</p>
             </div>
+        </div>
+    </div>
+    <div class="flex skills" id="skills">
+        <div class="skills__block">
+            <h2>Skills</h2>
+            <p class="skills__text">I work with technologies such as</p>
+            <div class="flex skills__items">
+                <div class="skills__items-single">
+                    <img class="skills__item-logo" src="img/asp.net.png" alt="logo">
+                    <p class="skills__item-name">ASP.NET CORE</p>
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                </div>
+                <div class="skills__items-single">
+                    <img class="skills__item-logo" src="img/sql-server.png" alt="logo">
+                    <p class="skills__item-name">MS SQL Server</p>
+                    <img class="skills__item-star" src="img/star.png"  alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                </div>
+                <div class="skills__items-single">
+                    <img class="skills__item-logo" src="img/htmlcss.png" alt="logo" >
+                    <p class="skills__item-name">HTML+CSS</p>
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                    <img class="skills__item-star" src="img/star.png" alt="ico">
+                </div>
+            </div>
+            <p class="skills__text">I'm also studying now</p>
+            <div class="flex skills__items">
+                <div class="content-skills-items-single">
+                    <img class="skills__item-logo" src="img/postgre.png" alt="ico">
+                    <p class="skills__item-name">Postgre SQL</p>
+                </div>
+                <div class="content-skills-items-single">
+                    <img class="skills__item-logo" src="img/vue.png" alt="ico">
+                    <p class="skills__item-name">Vue</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex contacts" id="contacts">
+        <div class="contacts__block">
+            <h2>Contacts</h2>
+            <p> Want to know more or just chat?<br> You are welcome</p>
+            <button class="contacts__button" onclick="document.location='https://telegram.me/dante_s2'">Send message
+            </button>
+            <div class="flex contacts__icons">
+                <a href="https://www.linkedin.com/in/luc1f/" target="_blank">
+                    <img class="contacts__icons-ico" src="img/ico/linkedin.ico" alt="ico"></a>
+                <a href="https://vk.com/luc1f" target="_blank">
+                    <img class="contacts__icons-ico" id="ico-vk" src="img/ico/vk.ico" alt="ico">
+                </a>
+                <a href="https://telegram.me/dante_s2" target="_blank">
+                    <img class="contacts__icons-ico" id="ico-tlg" src="img/ico/telegram.ico" alt="ico">
+                </a>
+                <a href="https://github.com/luc1f-a" target="_blank">
+                    <img class="contacts__icons-ico" src="img/ico/github.ico" alt="ico">
+                </a>
+            </div>
+            <p class="contacts__footer-text">Add me on<br>LinkedIn, Vk, Telegram, Github</p>
         </div>
     </div>
 </div>

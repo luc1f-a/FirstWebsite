@@ -20,16 +20,19 @@ html {
 }
 
 body {
-    background-color: #fff;
     font-size: 1.8rem;
     font-family: Gilroy-Medium;
+}
+
+h2 {
+    font-family: Gilroy-Bold;
 }
 
 ul {
     list-style: none;
 }
 
-.separator {
+.divider {
     border: 1px solid #828282;
 }
 
@@ -42,24 +45,24 @@ ul {
     margin: 3.3rem auto;
 }
 
-.header-nav-menu {
-    font-weight: bold;
-    display: flex;
+.nav-menu {
+    font-family: Gilroy-Bold;
     justify-content: space-between;
     width: 100%;
     padding: 0 0 3.1rem;
 }
 
-.header-nav-menu_link {
+.nav-menu__link {
     text-decoration: none;
     color: #828282;
 }
-.header-nav-menu_link:hover{
- color: black;
+
+.nav-menu__link:hover {
+    color: black;
     transition-duration: 0.3s;
 }
 
-.header-nav-menu_item-active {
+.nav-menu__item-active {
     color: black;
 }
 
@@ -67,76 +70,73 @@ ul {
     justify-content: space-between;
 }
 
-.header-content-left {
-    font-weight: bold;
-    flex-wrap: wrap;
+.content__name {
     font-size: 4.7rem;
     line-height: 5.9rem;
     margin-top: 4rem;
 }
 
-.header-content-center {
+.content__description {
     font-weight: normal;
     margin-top: 9.5rem;
 }
 
-.header-content-right {
-    margin-top: 7rem;
+.content__language {
+    margin: 3.5rem 0;
     font-weight: bold;
     font-size: 1.6rem;
-    flex-direction: row;
+    align-content: center;
 }
 
-.header-content-right > ul {
+.content__language-items {
     padding: 0;
     transform: translateX(90%) rotate(-90deg);
 }
 
-.header-content-right-language > * {
+.content__language > * {
     padding: 0 0.3rem;
 }
 
-.header-content-right-language-item-link {
+.language-item {
     text-decoration: none;
     color: #828282;
 }
 
-.header-content-right-language-item-link:hover {
+.language-item:hover {
     color: black;
     transition-duration: 0.3s;
 }
 
 
-.header-content-right-language-item-active-link {
+.language-item-active {
     color: black;
     text-decoration: none;
 }
 
-.header-content-image {
+.header__content-image {
     margin-top: 3rem;
     margin-bottom: 10.4rem;
 }
-.content-about_me > h2 {
+
+.content {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-me {
+    background: #F6F6F6;
+    justify-content: center;
+}
+
+.about-me__block h2 {
     font-size: 3.4rem;
     font-weight: bold;
     line-height: 4.2rem;
     margin-top: 12rem;
     text-align: center;
 }
-.content{
-    justify-content: center;
-}
-.content-about_me-background{
-    background: #F6F6F6;
-    width: 100%;
-    justify-content: center;
-}
 
-.content-about_me {
-    flex-direction: column;
-}
-
-.content-about_me-description {
+.about-me__description {
     margin-top: 1.7rem;
     margin-bottom: 10.7rem;
     flex-direction: column;
@@ -146,21 +146,120 @@ ul {
     width: 53rem;
 }
 
-.content-about_me-description > p {
+.about-me__description-text {
     margin-bottom: 4.5rem;
 }
-#content-about_me-description2{
+
+.about-me__description-text:nth-child(2) {
     width: 46rem;
     margin-left: auto;
     margin-right: auto;
 }
-#content-about_me-description3{
+
+.about-me__description-text:nth-child(3) {
     width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+
 }
 
-.content-about_me-description > p:last-child {
+.skills {
+    justify-content: center;
+    text-align: center;
+}
+
+.skills__block h2 {
+    font-size: 3.4rem;
+    margin-top: 9.1rem;
+    margin-bottom: 7rem;
+}
+
+.skills__items {
+    justify-content: space-around;
+    margin: 0;
+}
+
+.skills__text {
+    margin: 8.3rem auto;
+}
+
+.skills__items-single {
+    margin-right: 9rem;
+}
+
+.content-skills-items-single:last-child {
+    margin-right: 0;
+}
+
+.skills__item-logo {
+    width: 8.5rem;
+    height: 8rem;
+}
+
+.skills__item-name {
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+    color: #828282;
+    font-size: 1.4rem;
+}
+
+.skills__item-star {
+    width: 2.6rem;
+    margin-right: 0.3rem;
+}
+
+.skills__items-single:nth-child(1) .skills__item-star:nth-last-child(-n+3) {
+    filter: invert(90%);
+}
+
+.skills__items-single:nth-child(2) .skills__item-star:nth-last-child(-n+2) {
+    filter: invert(90%);
+}
+
+.skills__items-single:nth-child(3) .skills__item-star:nth-last-child(-n+2) {
+    filter: invert(90%);
+}
+
+.contacts {
+    background: #F6F6F6;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts__block h2 {
+    margin-top: 11.4rem;
+    margin-bottom: 2rem;
+    font-size: 3.4rem;
+}
+
+.contacts__block p {
+    margin-bottom: 3rem;
+}
+
+.contacts__button {
+    font-family: Gilroy-Bold;
+    background: #070707;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    padding: 1.3rem 3rem 0.6rem 2.8rem;
+}
+
+.contacts__icons {
+    margin-top: 9.2rem;
+    justify-content: space-around;
     margin-bottom: 0;
+    margin-bottom: 4.5rem;
+}
+
+.contacts__icons-ico {
+    width: 4rem;
+}
+
+.contacts__footer-text {
+    font-size: 1.4rem;
+    color: #828282;
+    margin-bottom: 5.3rem;
 }
 
