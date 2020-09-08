@@ -187,8 +187,7 @@ ul {
 .skills__items-single {
     margin-right: 9rem;
 }
-
-.content-skills-items-single:last-child {
+.skills__items-single:last-child {
     margin-right: 0;
 }
 
@@ -243,7 +242,8 @@ ul {
     color: white;
     border-radius: 30px;
     border: 0;
-    padding: 1.3rem 3rem 0.6rem 2.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer ;
 }
 
 .contacts__icons {
