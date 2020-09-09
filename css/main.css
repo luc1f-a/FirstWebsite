@@ -315,6 +315,7 @@ ul {
         flex-wrap: wrap;
     }
 
+
     .content__name, .header__content-image {
         margin: 0;
     }
@@ -397,7 +398,9 @@ ul {
     .skills__items-single {
         margin: 0 0 2rem 0
     }
-
+    .nav-menu{
+        left:-100%;
+    }
 }
 
 
