@@ -55,11 +55,11 @@ ul {
 .nav-menu__link {
     text-decoration: none;
     color: #828282;
+    transition: 0.3s;
 }
 
 .nav-menu__link:hover {
     color: black;
-    transition-duration: 0.3s;
 }
 
 .nav-menu__item-active {
@@ -100,11 +100,12 @@ ul {
 .language-item {
     text-decoration: none;
     color: #828282;
+    transition: 0.3s;
+
 }
 
 .language-item:hover {
     color: black;
-    transition-duration: 0.3s;
 }
 
 
@@ -244,6 +245,10 @@ ul {
     border: 0;
     padding: 1rem 3rem;
     cursor: pointer ;
+    transition: 0.25s;
+}
+.contacts__button:hover{
+    transform: scale(1.1);
 }
 
 .contacts__icons {
@@ -254,6 +259,11 @@ ul {
 
 .contacts__icons-ico {
     width: 4rem;
+    transition: 0.25s;
+
+}
+.contacts__icons-ico:hover{
+    transform: scale(1.2);
 }
 
 .contacts__footer-text {
